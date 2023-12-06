@@ -10,8 +10,8 @@ const Hover = () => {
   return (
       <div>
           <p >{ JSON.stringify(state.value) }</p>
-          <button onClick={()=>{send({type: 'MOUSEOVER'})}}>hoverYES</button><hr/>
-          <button onClick={()=>{send({type: 'MOUSEOUT'})}}>hoverNO</button>
+          <button onClick={()=>{send({type: 'MOUSEOVER'})}}>YES</button>/
+          <button onClick={()=>{send({type: 'MOUSEOUT'})}}>NO</button>
         </div>
   )
 }

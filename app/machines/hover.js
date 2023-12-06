@@ -1,12 +1,12 @@
 import { createMachine } from 'xstate';
 
 export const hoverMachine = createMachine({
-	initial: 'hoverNO',
+	initial: 'hoverNOT',
 	//prettier-ignore
 	states: {
-        hoverNO:
+        hoverNOT:
             { on: { MOUSEOVER: { target: 'hoverYES' } } },
         hoverYES: 
-            { on: { MOUSEOUT: { target: 'hoverNO' } } },
+            { on: { MOUSEOUT: { target: 'hoverNOT' } } },
     },
 });
