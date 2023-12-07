@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import Hover from './pages/Hover';
+import Todo from './pages/Todo';
 
+//
 export default function Home() {
 	return (
 		<main className={styles.main}>
@@ -15,6 +17,9 @@ export default function Home() {
 			<div className={styles.grid}>
 				<div className={styles.card}>
 					<Hover />
+				</div>
+				<div className={styles.card}>
+					<Todo />
 				</div>
 				<a
 					href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
