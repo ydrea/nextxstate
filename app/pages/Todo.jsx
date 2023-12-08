@@ -18,7 +18,7 @@ const Todo = () => {
         <div>
             <p> {JSON.stringify(state.value)} </p>
             <p> {JSON.stringify(state.context)} </p>
-
+            <div>{ state.matches('Todos Loaded') && <button onClick={()=>send({type: 'Create new'})}>Creating</button> }</div>
     </div>
   )
 }
